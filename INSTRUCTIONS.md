@@ -3,7 +3,7 @@
 I did this from within Cursor, its codebase indexing capabilities allow the LLM to ask questions in natural language against the codebase to form this better.
 
 ## First Steps
-=============
+--------------
 
 ### Scoping
 Comprehensively describe the structure of your project, your goals, how specific things should function.
@@ -42,7 +42,8 @@ WAIT FOR CONFIRMATION BEFORE MAKING ANY OTHER CODE CHANGES OTHER THAN THE INSTRU
 
 
 ## Next steps
-==============
+--------------
+
 Review the PRD document that has been generated, specifically checking for:
 1. Sequencing of the phases
 2. Coverage of the instructions created (e.g. does it match what you want to build)
@@ -58,7 +59,7 @@ Again - this part of the process can take a while, it's important the PRD is acc
 
 
 ## Starting "development"
-=========================
+--------------------------
 
 When ready, tell the LLM to start using the following prompt:
 
@@ -72,7 +73,8 @@ After each item in the task is completed update this IMPLEMENTATION file and des
 ```
 
 ## Iteration
-=============
+--------------
+
 From here it is a process of iteration and code review, review the completed items (Cursors diff is helpful here), make sure that the tests and services run in terminal (the agent should run them in chat but often the execution environments are different) - ensure the test suites run (they will save you down the track).
 Fully reviewing and running the code after each task completion is recommended, the LLM *WILL* do things differently than you might, patterns can sometimes be antipatterns or just overly complex
 
@@ -80,7 +82,7 @@ Fully reviewing and running the code after each task completion is recommended, 
 Commit after you have tested and confirmed it to be working.
 
 ## Moving on
-============
+------------
 
 Basically just repeat the steps under `starting development` and iterate on a task by task basis - dont be tempted to have it create an entire phase at once, it will try and do it and it will write the code but you will completely lose track of how it has done it - keep the cognitive load small enough to reivew.
 
